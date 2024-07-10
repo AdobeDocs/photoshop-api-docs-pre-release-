@@ -100,7 +100,7 @@ jobs:
           REPO_NAME: ${{ github.event.repository.name }}
           REPO_BRANCH: ${{ needs.set-state.outputs.branch_short_ref }}
       - name: Deploy
-        uses: tibor19/static-website-deploy@v1
+        uses: AdobeDocs/static-website-deploy@v1
         with:
           enabled-static-website: 'true'
           folder: 'dist'
@@ -178,7 +178,7 @@ jobs:
           REPO_NAME: ${{ github.event.repository.name }}
           REPO_BRANCH: ${{ needs.set-state.outputs.branch_short_ref }}
       - name: Deploy
-        uses: tibor19/static-website-deploy@v1
+        uses: AdobeDocs/static-website-deploy@v1
         with:
           enabled-static-website: 'true'
           folder: 'dist'
